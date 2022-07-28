@@ -1,0 +1,360 @@
+<html>
+<style>
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color:  antiquewhite;
+    font-family: "Liberation Serif", Times, serif;
+
+
+}
+
+ul {
+    border-top: 4px solid gold;
+    border-bottom: 4px solid gold;
+    list-style-type: none;
+    background-color: maroon;
+    margin: 0;
+    padding: 0.25%;
+
+    position: sticky;
+    background: maroon;
+    color: gold;
+    text-align: center;
+    top: 0;
+
+}
+@media all and (max-width : 1024px) {
+li {
+    display: inline;
+    color: gold;
+    text-align: center;
+    background-color: maroon;
+    font-weight: bold;
+    font-size: 200%;
+    padding: 0px 5px;
+    
+    
+    
+    
+}
+}
+li {
+    display: inline;
+    color: gold;
+    text-align: center;
+    background-color: maroon;
+    font-weight: bold;
+    
+    
+    
+    
+}
+
+h2 {
+    background-color: maroon;
+    color: gold;
+    padding: 0.5%;
+    font-weight: bold;
+    font-family: "Liberation Serif", Times, serif;
+}
+a {
+    color: indigo;
+    font-weight: bold;
+    font-family: "Liberation Serif", Times, serif;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+a {
+    color: indigo;
+    font-weight: bold;
+    font-family: "Liberation Serif", Times, serif;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 100%;
+}
+
+.headerDiv {
+    padding: 40px;
+    text-align: center;
+    background-color:  maroon;
+    color: gold;
+    font-size: 200%;
+    font-weight: bold;
+
+    
+    font-family: "Liberation Serif", Times, serif;
+    
+}
+
+.textDiv {
+    background-color: antiquewhite;
+    text-align: center;
+    margin-top: 1.5%;
+    font-family: "Liberation Serif", Times, serif;
+    margin-right: 30%;
+    margin-left: 30%;
+    padding: 0.5%;
+    overflow:hidden;
+    
+
+
+}
+@media all and (max-width : 1024px) {
+.textDiv {
+    background-color: antiquewhite;
+    text-align: center;
+    margin-top: 1.5%;
+    font-family: "Liberation Serif", Times, serif;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding: 0.5%;
+    font-size: 150%;
+    overflow:hidden;
+    
+}
+
+}
+</style>
+<head>
+</head>
+<body>
+
+<div class="headerDiv">
+BASIC CYBERSECURITY IN THE AGE OF MASS SURVEILLANCE
+</div>
+ <ul>
+  <li><a  style= "color: gold; background-color: maroon; font-size: 125%;" href="#preface_navbar">Pr.</a></li>
+  <li><a style= "color: gold; background-color: maroon; font-size: 125%;"href="#os_navbar">I</a></li>
+  <li><a style= "color: gold; background-color: maroon; font-size: 125%;"href="#general_navbar">II</a></li>
+    <li><a style= "color: gold; background-color: maroon; font-size: 125%;"href="#basic_linux_security_navbar">III</a></li>
+    <li><a style= "color: gold; background-color: maroon; font-size: 125%;"href="#general_recommendations_navbar">IV</a></li>
+    <li><a style= "color: gold; background-color: maroon; font-size: 125%;"href="#hacked_navbar">V</a></li>
+    <li><a style= "color: gold; background-color: maroon; font-size: 125%;"href="#smartphone_navbar">VI</a></li>
+    <li><a style= "color: gold; background-color: maroon; font-size: 125%;"href="#encryption_navbar">VII</a></li>
+    
+    
+  
+</ul> 
+<div class="textDiv">
+
+<a id="preface_navbar"></a>
+<h2 style="text-align:center">Preface</h2>
+
+<p style="text-align:justify">In the days of the so-called Information Age, both corporate and governmental entities have been collecting information about every single individual who connects to the internet. Now, more than ever, it is important to maintain the security and privacy of your digital devices. This document aims to explain security for your desktop and mobile devices at a more advanced level, keeping in mind, however, that the reader may not be technically proficient.
+<br>
+<br>
+As with all information on the internet, express caution when following any instructions laid out in this document and make sure to verify any information you may suspect to be misleading. Note, however, that all advice you may decide to follow contained in this document you do so out of your own volition. You are responsible for your own security and thus, it may be optimal to research further any information contained within this essay. The reader claims all responsibility for any damage sustained through following these instructions.</p>
+<a id="os_navbar"></a>
+<h2 style="text-align:center">I. Operating Systems</h2>
+<p style="text-align:justify">In 2022, there are several operating systems that dominate the market – those include 
+<a href="https://windows.microsoft.com/">Windows</a>, <a href="https://www.apple.com/macos">MacOS</a> and <a href= "https://www.kernel.org/">Linux</a>. There are some derivatives from these systems, which shall be listed later on in the document.
+<br>
+<br>
+The main differences between these operating systems are usually clear when comparing the user space – the user interface and default applications. Windows, for example, uses the NT kernel, but supplements everything else using its own proprietary applications used for anything from browsing your documents, viewing them and configuring your system.
+<br>
+<br>
+The main differences relevant for the reader between these systems, however, lie not in the applications one commonly uses, but the philosophy associated with them . Windows and MacOS are mostly proprietary and not open source. This means that most, if not all, preinstalled and or essential applications are licensed to prohibit free use, redistribution and modification. With the applications being closed source, you cannot inspect how exactly an application is written, leaving you in the dark to guess if the software you are using isn’t malicious and isn’t spying on you.
+<br>
+<br>
+Linux, however, is a different system. Almost all of the software on a typical Linux distribution (Ubuntu, Debian) is completely open source – it is built from publicly available source code, licensed to allow you to modify and redistribute the application in question. This allows you and other people to know exactly what an application is doing. If someone who wrote an application made it to track what websites you are visiting, you can know that such functionality exists and can be easily removed. This is useful in the case of looking for backdoors – ways individuals or malicious groups can access your device or software without your permission, built into any application.
+<br>
+<br>
+Closed source applications have no such benefits – the writer can implement any kind of tracking solution into their application, which you would not be able to remove or even know it is there in many cases. With this in mind, no usage of proprietary systems is encouraged and they will not be talked about in this document.
+<br>
+<br>
+Linux has no unified ecosystem. Distributions or operating systems have their own software selection, default settings, security measures and even philosophy.
+<br>
+<br>
+Popular distributions include:
+    <br>
+    • <a href="https://ubuntu.com/">Ubuntu</a>
+    <br>
+    • <a href="https://linuxmint.com/">Linux Mint</a>
+    <br>
+    • <a href="https://www.debian.org/">Debian</a>
+    <br>
+    • <a href="https://getfedora.org/">Fedora</a>
+    <br>
+    • <a href="https://www.opensuse.org/">openSUSE</a>
+    <br>
+<br>
+<br>
+All of them have different approaches to security, package distribution and general philosophy. Before choosing one to use, make sure to research them thoroughly and see if they work for you.
+<br>
+<br>
+Ubuntu and Linux Mint are the most user friendly distributions, while having decent security measures by default. They include the widest assortment of applications you can download. Note, however, that some applications may not be open source, but neither contain proprietary software by default. Some exceptions are proprietary GPU drivers (in the case of Nvidia), optional applications, CPU microcode and others. There are no specific recommendations for these distributions that will not be elaborated upon later.
+<br>
+<br>
+Debian is the foundation from which Ubuntu and Linux Mint are built. It follows a slow release cycle and most software is usually outdated. Unlike Ubuntu or Linux Mint, Debian does not contain any closed source applications by default, but may host some applications in extra repositories (ones that are not enabled by default) that are proprietary and not open source.
+<br>
+<br>
+Fedora is slightly different in that it uses a different packaging format, which is intuitive, but can be mostly ignored – installing applications using an app store requires no usage of the command line (commonly called a terminal). This is not unique to Fedora – other distributions also have graphical application stores. One benefit of Fedora is the increased focus on security – it implements SELinux - mandatory access control software used to limit what applications can do. For example, an application may not be allowed to use your camera or microphone. Keep in mind – Fedora does not ship patented codecs, so, some videos will fail to play.
+<br>
+<br>
+openSUSE is similar to Fedora, using the same packaging format, but is different in other ways. It lacks patented codecs like Fedora, but comes with an even bigger focus on security at the cost of usability. Applications are very up to date and updates are rather frequent.
+<br>
+<br>
+If you want as much security as you can get, look into QubesOS – which uses a complicated system of virtual machines to isolate any malicious applications you may be running.
+<br>
+<br>
+In the case of you wishing to keeping any traces of your usage from remaining on your computer, Tails OS is perfect. Make sure to research the operating system and understand how to use it safely.
+<br>
+<br>
+Once you choose a distribution to use, it is recommended to view the documentation and research any issues you may encounter.</p>
+<a id="general_navbar"></a>
+<h2 style="text-align:center">II. General Internet Usage</h2>
+<p style="text-align:justify">The internet, as useful as it is, may be dangerous if not used responsibly. Common sense is important, but not always is it enough for browsing the internet safely. Your browser is one of the most vulnerable and complex software on your system and can be compromised to run malicious code.
+<br>
+<br>
+In terms of browsers, for most users, Firefox is recommended. It is completely open source and has a good license. Chrome cannot be recommended, because it is not open source. Chromium, the open source base for Chrome, may also contain code that may be used for tracking you. There has not been a full cleanup of the source code, but efforts are ongoing to make it free of any code that may track you. Using derivatives of Chromium or Firefox is not recommended, as they may lag behind security updates.
+<br>
+<br>
+In cases, however, where you need as much privacy as you can get, Tor Browser is recommended. It uses a complicated system to mask your IP and identity, but may be illegal in your country. Before using it, make sure to read up on how the Tor Browser works and follow official suggestions. Do not install any extra extensions or change the settings.
+<br>
+<br>
+When using normal Firefox, several extensions that may be useful for your privacy include uBlock Origin, which acts as an adblocker and Privacy Badger, which is meant to help you avoid being tracked across websites. Make sure to keep your browser up to date (your distribution may do so for you) and avoid installing any unnecessary extensions. Configure Firefox settings through the settings menu.
+<br>
+<br>
+Avoid using Google and Google services. Google is notorious for tracking users and selling their data. If you wish to use a search engine, none can quite compare to Google, but DuckDuckGo is a decent alternative that has better privacy, though may be less optimal than using Google.
+<br>
+<br>
+For email, Protonmail may be a good substitute for Gmail, it is free and has a good amount of features for which you do not have to pay. It claims to encrypt your emails, which may be true, but it is better practice to encrypt them yourself using GPG, which will be elaborated upon later.
+<br>
+<br>
+It is recommended not to just rely on specific guidelines of what to do and what not to do on the internet, but understand operational security and apply your knowledge of it as you use the internet. Above all else, use logic and reasoning to know if you should do something on the internet or if you shouldn’t.</p>
+<a id="basic_linux_security_navbar"></a>
+<h2 style="text-align:center">III. Basic Linux security</h2>
+<p style="text-align:justify">While Linux itself is open source, you still want to take some time to understand and apply security measures for your computer. The race between malicious actors and cybersecurity is ongoing and, it seems, will never end. New ways of compromising your system are being developed every day – be it by government organizations, private companies or by individuals.
+<br>
+<br>
+On Linux, the way windows and applications generally work is through something called Xorg. It is perfectly usable in this day and age, but is slowly becoming outdated and is in the process of being replaced by something called Wayland, another display server protocol. While it does have some drawbacks and, of course, new features, what is relevant is that it has isolation between different application windows. In effect, applications have a much harder time trying to log your keystrokes. Applications cannot see the contents of other applications (with some exceptions, as with screen recorders – but only with your consent) and will not be able to log what you type in other applications.
+<br>
+<br>
+Keyloggers are generally not a big concern, but they are rather easy to develop. If you wish to be more confident that a proprietary application like Skype isn’t logging your keystrokes, you may like Wayland. There are some drawbacks to it – only KDE and GNOME support it, while on Nvidia, it’s not always a good experience. It’s not absolutely necessary to use, but if you do use it, make sure you’re using the Wayland version of an application, as applications that run through the XWayland compatibility layer can still see what you are doing on other XWayland applications. To check this easily, install xeyes through your package manager and move your mouse over a Wayland application. If the eyes follow your mouse, that means it’s a Wayland application. Generally, most applications do support Wayland, such as Firefox.
+<br>
+<br>
+One of the most important, however, measures is to encrypt your file system. That means that even if someone physically takes out your disk, they cannot see what is on it without a password. This step is incredibly important if you are afraid of your device being physically stolen. Choose a good password, one which you can remember. Refer to the documentation of your distribution on how to enable full disk encryption. There are some flaws to disk encryption, so, do not expect it to be a complete solution. It may be optimal to examine your laptop for physical tampering if you believe your laptop may have been tampered with.
+<br>
+<br>
+One of the most common security measures are firewalls. They, in layman’s terms, control what services can function over the local access network (for example, mDNS is commonly used for printers) and the world wide web. Most distributions will have acceptable firewall settings applied by default. Some recommendations: switch between profiles when connecting to a potentially insecure network (such as cafe internet) to ensure that the absolutely minimal set of services will run. Refer to your distribution’s documentation on how to set up a firewall. For computers in a trusted network, a firewall may not be completely necessary, but it is best to keep one running nevertheless. Allow only the services you need to run.
+<br>
+<br>
+Application sources – most Linux distributions use package repositories – remote servers from which you can download software. This software is built using their build systems on their servers (this does not apply to proprietary software) from open source sources. Generally, whatever repository you have will essentially have root access to your computer. Therefore, it is recommended to use only official package sources and to avoid anything else. Examples of what to avoid: Flathub, AppImageHub, Snapcraft. It may be necessary to use an unofficial repository for codecs or non open source software (openSUSE, Fedora), therefore, use your own judgement if you trust them. Packages are usually signed by distributors, so you can at least know they weren’t tampered with in general, unless the entire build system and the server on which the private keys are stored is compromised. Try to keep up to date regarding distribution security news.
+<br>
+<br>
+Distributions usually employ some kind of mandatory access control (MAC) solution. This is usually either SELinux or AppArmor. In short, they restrict access to files. As a result, for example, a compromised or malfunctioning Firefox will not be able to use your microphone. This applies to other software and not just your browser. It is recommended to keep either of those systems working. If you wish to lock down an application more than it is locked down by default, read the documentation of SELinux, AppArmor and any associated guides. Fedora uses SELinux, while almost every other distribution uses AppArmor.
+<br>
+<br>
+It may be useful to use an auditing system like Lynis to ensure if your system has not been compromised. Additionally, keeping sha256sums of your most important software and applications in /usr/bin/ may be useful to know if your system has been compromised.</p>
+<a id="general_recommendations_navbar"></a>
+<h2 style="text-align:center">IV. General Recommendations</h2>
+<p style="text-align:justify">
+    • Do not run random shell scripts you find on the internet. Especially not with sudo (root access). Audit them yourself to find out if you can trust them.
+    <br>
+    <br>
+    • Do not download random binaries of software you would like to use. Make sure you can trust whoever is distributing that software.
+        <br>
+    <br>
+    • Reserve sudo (root access) to only applications that you trust and are verified to work properly. If you wish to edit a system file, use sudoedit in a terminal instead.
+        <br>
+    <br>
+    • Sign and encrypt documents, files, etc. that you want to keep private before sending it to someone else. Use GPG for this.
+        <br>
+    <br>
+    • If you do not trust a particular document or a program you want to open, use a virtual machine to open it. Delete it afterwards. If possible, do not grant USB access to your virtual machine. Refer to other, more in-depth guides regarding the usage of virtual machines.
+        <br>
+    <br>
+    • Always use strong passwords. Especially so for important accounts, logins on your desktop, root passwords and passwords for your encrypted file system.
+        <br>
+    <br>
+    • Avoid using TMP for encryption. While TPM may have genuine benefits, it is a closed system and the true security of it is unknown.
+        <br>
+    <br>
+    • For creating passwords, if you do not wish to use randomly generated ones, some recommendations:
+        <br>
+	1. 16-20 characters for your password.
+	    <br>
+	2. Use both uppercase and lowercase letters.
+	    <br>
+	3. Do not use full, grammatically correct English or 	otherwise words. Replacing similar letters with 	numbers also does not work.
+	    <br>
+	 4. Use numbers in your password. If the application 	that you are making the password for supports special 	characters (&, %, etc.)
+	 include them as well. Spaces 	may be optimal in some scenarios.
+	     <br>
+ 	5. Refer to other, more in-depth guides than this on 	how to create a secure password.
+ 	    <br>
+ 	            <br>
+    • Do not share specific information about your hardware or security measures online or in person.
+            <br>
+    <br>
+    • Do not connect to untrusted networks.
+     	    <br>
+ 	            <br>
+    • Do not use bluetooth for transferring files (if you absolutely must do it, encrypt the file beforehand).
+     	    <br>
+ 	            <br>
+    • Do not connect any random USB Flash Drives to your computer.
+     	    <br>
+ 	            <br>
+    • Do not use your fingerprint to authenticate on any laptop, desktop, smartphone or any other device.
+     	    <br>
+ 	            <br>
+    • Keep your device up to date.
+     	    <br>
+ 	            <br>
+    • Find other mediums to store ISOs and firmware on.
+     	    <br>
+ 	            <br>
+      </p>
+<a id="hacked_navbar"></a>
+<h2 style="text-align:center">V. How to deal with a compromised system?</h2>
+<p style="text-align:justify">If you, for any reason whatsoever, believe that your system is compromised, there are a few steps you should take. Before taking any, however, evaluate how far reaching this hack may be. Remember or write down (on a piece of paper) the accounts, documents, passwords that may have been compromised and deal with the fallout later. This includes changing passwords, notifying others about your compromise.
+     	    <br>
+ 	            <br>
+Once you have evaluated the situation, immediately turn off your computer. Do not use the operating system itself to turn it off, preferably rip the cord out of your wall outlet. Once you have done that, it may be optimal to do the same for other devices and especially your router. If you have backups of operating systems on other, external mediums (such as flash drives, disks, etc.) keep them ready. Turn off your router and keep it disconnected physically from any other devices. Once you’re done turning off as many devices as you feel the need to, you should begin to examine the computer that may be compromised.
+<br>
+<br>
+Boot into a live ISO on a flash drive (use your UEFI/BIOS to change boot settings) and examine the file system on your desktop. Keep it disconnected from the internet. Inspect the file system and compute the sha256sums of software of which you have physically written down the desired shasums, before the compromise. Compare them. If they are different, it is possible they may have been modified. In this case, consider inspecting other systems/devices on your LAN, including your router. When doing this, do not run any files on the compromised system and do not open any documents. If you have verified that your system is compromised, it is recommended to wipe everything on that system, including your operating system and executable files. For photos, text files, this may not be necessary and you may be able to backup them.
+<br>
+<br>
+Once you are done verifying your other devices and wiping them (if it is required), you should reinstall your operating systems. Before connecting them to the internet during this installation process (if it is required), ensure that your router is not compromised. This is a very complicated process and it may be best to wipe it instead. While this may be risky, refer to original equipment manufacturer documentation on how to flash a new, safe operating system on it. On some routers, this can be done through something called TFTP. If it is a cheap router, however, it may be best to destroy it and replace it with a new one.
+<br>
+<br>
+In theory, your hardware itself could be compromised – but such hacks usually require physical access and are not easy to do. If you are concerned that your hardware itself may be tampered with (your keyboard, CPU, BIOS, SDD/HDD firmware), you should replace them.
+<br>
+<br>
+If you have managed to understand how your computer and network were compromised, learn from your mistakes and try to exercise more caution now and in the future.
+</p>
+<a id="smartphone_navbar"></a>
+<h2 style="text-align:center">VI. Basic smartphone security</h2>
+<p style="text-align:justify">
+Smartphones are not secure devices for communication, encryption or other actions. This is usually due to spyware and closed source software installed on it, which not only are potential ways an attacker could compromise your smartphone, but they also collect important data about you. Don’t trust their privacy policies – developers and companies will and do lie. 
+<br>
+<br>
+iPhones, despite being closed source, usually employ good security and receive security updates for a long time. The downside is that you run a significant amount of closed source software, so, it’s up to you to decide if you trust iOS or not.
+<br>
+<br>
+Androids are usually open source with a significant amount of closed source software installed by default, as well as spyware. Smartphone manufacturers such as Xiaomi and Huawei are one of the worst offenders. You usually cannot uninstall those applications and have to install custom ROMs.
+<br>
+<br>
+Custom ROMs are custom operating systems (usually based on Android) meant to replace the current one installed on your smartphone. The availability of custom ROMs varies by OEM (original equipment manufacturer) – Xiaomi and Google Pixel phones can generally have their default systems replaced. Before doing this, you must unlock the bootloader. This is not always a good choice, however. Avoid installing unofficial ports and stick to a few custom ROMs you trust. LineageOS is one of the best custom operating systems for smartphones and supports a wide variety of devices. GrapheneOS is focused around security, but supports only some Google Pixel devices (namely, those that still continue to receive security updates). This is the most optimal smartphone operating system for you if you wish to employ as much security as possible.
+<br>
+<br>
+In the end, however, smartphones are not secure devices, no matter what kind they are. Use your desktop or laptop if you wish to have better security. Unlocking the bootloader, for example, may leave you open to some sophisticated attacks, but it is in many cases preferable to having OEM spyware on your smartphone. As with desktops, stay up to date on security news and install security updates.</p>
+<a id="encryption_navbar"></a>
+<h2 style="text-align:center">VII. Encrypting files using PGP.</h2>
+<p style="text-align:justify">In many cases, you may want to encrypt files, documents or messages that you want to keep private. The best tool for this is GPG. There are many graphical clients available for it. This is a part of the guide I will leave short, as you may want to read about GPG in a more in-depth manner than I can provide, so, seek out good guides regarding it.</p>
+
+</div>
+
+<h1>
+
+</h1>
+</body>
+
+
+</html>
